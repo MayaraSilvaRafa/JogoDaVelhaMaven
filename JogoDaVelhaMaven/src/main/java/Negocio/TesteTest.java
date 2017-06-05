@@ -127,26 +127,22 @@ public class TesteTest {
 	
 	@Test
 	public void verficarJogador1Ganhando(){
-		jogadas.verificarVencedor(tab, jogador1);
-		boolean resultado = true;
+		boolean resultado = jogadas.verificarVencedor(tab, jogador1);
 		Assert.assertEquals(true, resultado);
 	}
 	@Test
 	public void verficarJogador1Empate(){
-		jogadas.verificarVencedor(tab, jogador1);
-		boolean resultado = false;
+		boolean resultado = jogadas.verificarVencedor(tab, jogador1);
 		Assert.assertEquals(false, resultado);
 	}
 	@Test
 	public void verficarJogador2(){
-		jogadas.verificarVencedor(tab, jogador2);
-		boolean resultado = true;
+		boolean resultado = jogadas.verificarVencedor(tab, jogador2);
 		Assert.assertEquals(true, resultado);
 	}
 	@Test
 	public void verficarJogador2Empate(){
-		jogadas.verificarVencedor(tab, jogador2);
-		boolean resultado = false;
+		boolean resultado = jogadas.verificarVencedor(tab, jogador2);
 		Assert.assertEquals(false, resultado);
 	}
 	
