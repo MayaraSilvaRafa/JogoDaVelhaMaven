@@ -14,55 +14,55 @@ public class TesteTest {
 	
 	//fazerJogada(Jogador j,String posicao, Tabuleiro tab)
 	@Test
-	public void test1(){
+	public void fazerJogadaTest1(){
 		jogadas.fazerJogada(jogador1, "1",tab );
 		String resultado = tab.tab[0][0];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test2(){
+	public void fazerJogadaTest2(){
 		jogadas.fazerJogada(jogador1,"2",tab);
 		String resultado = tab.tab[0][1];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test3(){
+	public void fazerJogadaTest3(){
 		jogadas.fazerJogada(jogador1,"3",tab);
 		String resultado = tab.tab[0][2];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test4(){
+	public void fazerJogadaTest4(){
 		jogadas.fazerJogada(jogador1,"4",tab);
 		String resultado = tab.tab[1][0];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test5(){
+	public void fazerJogadaTest5(){
 		jogadas.fazerJogada(jogador1,"5",tab);
 		String resultado = tab.tab[1][1];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test6(){
+	public void fazerJogadaTest6(){
 		jogadas.fazerJogada(jogador1,"6",tab);
 		String resultado = tab.tab[1][2];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test7(){
+	public void fazerJogadaTest7(){
 		jogadas.fazerJogada(jogador1,"7",tab);
 		String resultado = tab.tab[2][0];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test8(){
+	public void fazerJogadaTest8(){
 		jogadas.fazerJogada(jogador1,"8",tab);
 		String resultado = tab.tab[2][1];
 		Assert.assertEquals("X", resultado);
 	}
 	@Test
-	public void test9(){
+	public void fazerJogadaTest9(){
 		jogadas.fazerJogada(jogador1,"9",tab);
 		String resultado = tab.tab[2][2];
 		Assert.assertEquals("X", resultado);
@@ -70,55 +70,55 @@ public class TesteTest {
 	
 	//jogador2
 	@Test
-	public void test10() {
+	public void fazerJogadaTest10() {
 		jogadas.fazerJogada(jogador2,"1",tab);
 		String resultado = tab.tab[0][0];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test11(){
+	public void fazerJogadaTest11(){
 		jogadas.fazerJogada(jogador2,"2",tab);
 		String resultado = tab.tab[0][1];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test12(){
+	public void fazerJogadaTest12(){
 		jogadas.fazerJogada(jogador2,"3",tab);
 		String resultado = tab.tab[0][2];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test13(){
+	public void fazerJogadaTest13(){
 		jogadas.fazerJogada(jogador2,"4",tab);
 		String resultado = tab.tab[1][0];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test14(){
+	public void fazerJogadaTest14(){
 		jogadas.fazerJogada(jogador2,"5",tab);
 		String resultado = tab.tab[1][1];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test15(){
+	public void fazerJogadaTest15(){
 		jogadas.fazerJogada(jogador2,"6",tab);
 		String resultado = tab.tab[1][2];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test16(){
+	public void fazerJogadaTest16(){
 		jogadas.fazerJogada(jogador2,"7",tab);
 		String resultado = tab.tab[2][0];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test17(){
+	public void fazerJogadaTest17(){
 		jogadas.fazerJogada(jogador2,"8",tab);
 		String resultado = tab.tab[2][1];
 		Assert.assertEquals("O", resultado);
 	}
 	@Test
-	public void test18(){
+	public void fazerJogadaTest18(){
 		jogadas.fazerJogada(jogador2,"9",tab);
 		String resultado = tab.tab[2][2];
 		Assert.assertEquals("O", resultado);
