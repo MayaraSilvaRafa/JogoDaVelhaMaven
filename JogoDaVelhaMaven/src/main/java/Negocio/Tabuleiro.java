@@ -15,8 +15,8 @@ public class Tabuleiro {
 		tab[2][0] = "7";
 		tab[2][1] = "8";
 		tab[2][2] = "9";
-	}
 
+	}
 	public void imprimirTabuleiro(){
 		for (int i = 0; i < tab.length; i++) {
 			for (int j = 0; j < tab.length; j++) {

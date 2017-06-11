@@ -127,23 +127,49 @@ public class TesteTest {
 	
 	@Test
 	public void verficarJogador1Ganhando(){
+		jogadas.fazerJogada(jogador1, "1", tab);
+		jogadas.fazerJogada(jogador1, "2", tab);
+		jogadas.fazerJogada(jogador1, "3", tab);
+		
 		boolean resultado = jogadas.verificarVencedor(tab, jogador1);
 		Assert.assertEquals(true, resultado);
 	}
 	@Test
 	public void verficarJogador1Empate(){
+		jogadas.fazerJogada(jogador1, "1", tab);
+		jogadas.fazerJogada(jogador2, "2", tab);
+		jogadas.fazerJogada(jogador1, "3", tab);
+		jogadas.fazerJogada(jogador2, "4", tab);
+		jogadas.fazerJogada(jogador1, "5", tab);
+		jogadas.fazerJogada(jogador2, "7", tab);
+		jogadas.fazerJogada(jogador1, "6", tab);
+		jogadas.fazerJogada(jogador2, "9", tab);
+		jogadas.fazerJogada(jogador1, "8", tab);
 		boolean resultado = jogadas.verificarVencedor(tab, jogador1);
 		Assert.assertEquals(false, resultado);
 	}
 	@Test
 	public void verficarJogador2(){
+		jogadas.fazerJogada(jogador2, "1", tab);
+		jogadas.fazerJogada(jogador2, "2", tab);
+		jogadas.fazerJogada(jogador2, "3", tab);
 		boolean resultado = jogadas.verificarVencedor(tab, jogador2);
 		Assert.assertEquals(true, resultado);
 	}
 	@Test
 	public void verficarJogador2Empate(){
+		jogadas.fazerJogada(jogador1, "1", tab);
+		jogadas.fazerJogada(jogador2, "2", tab);
+		jogadas.fazerJogada(jogador1, "3", tab);
+		jogadas.fazerJogada(jogador2, "4", tab);
+		jogadas.fazerJogada(jogador1, "5", tab);
+		jogadas.fazerJogada(jogador2, "7", tab);
+		jogadas.fazerJogada(jogador1, "6", tab);
+		jogadas.fazerJogada(jogador2, "9", tab);
+		jogadas.fazerJogada(jogador1, "8", tab);
 		boolean resultado = jogadas.verificarVencedor(tab, jogador2);
 		Assert.assertEquals(false, resultado);
 	}
+	
 	
 }

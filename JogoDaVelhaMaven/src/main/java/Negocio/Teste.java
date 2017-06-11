@@ -36,8 +36,9 @@ public class Teste {
 				if(jogadas.verificarVencedor(tab, jogador1)){
 					break;
 				}
+				tab.imprimirTabuleiro();    
 
-			}else
+			}else{
 				if(jogadas.VerificarJogadas(posicao, tab) == true){
 					System.out.println("Escolha uma nova posição");
 					String novaPosicao = sc.next();
@@ -45,11 +46,14 @@ public class Teste {
 				}else if(jogadas.VerificarJogadas(posicao, tab) == false){
 					jogadas.fazerJogada(jogador2, posicao, tab);
 				}
-			if(jogadas.verificarVencedor(tab, jogador2)){
-				break;
+				if(jogadas.verificarVencedor(tab, jogador2)){
+					break;
+				}
+				tab.imprimirTabuleiro();
 			}
-			tab.imprimirTabuleiro();
 		}
+
+
 		if(jogadas.verificarVencedor(tab, jogador1)== false){
 			System.out.println("O jogo deu empate");
 		}
