@@ -149,7 +149,7 @@ public class TesteTest {
 		Assert.assertEquals(false, resultado);
 	}
 	@Test
-	public void verficarJogador2(){
+	public void verficarJogador2Ganhando(){
 		jogadas.fazerJogada(jogador2, "1", tab);
 		jogadas.fazerJogada(jogador2, "2", tab);
 		jogadas.fazerJogada(jogador2, "3", tab);

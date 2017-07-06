@@ -50,7 +50,7 @@ public class Teste {
 					break;
 				}
 				tab.imprimirTabuleiro();
-			}
+			} 
 		}
 
 

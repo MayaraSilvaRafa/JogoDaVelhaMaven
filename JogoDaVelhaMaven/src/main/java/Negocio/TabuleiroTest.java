@@ -6,12 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TabuleiroTest {
-	/*
-	tab.tab[0][0] = "1",tab.tab[0][1]="2",tab.tab[0][2]="3",
-			tab.tab[1][0] ="4",tab.tab[1][1]="5",tab.tab[1][2]="6",
-			tab.tab[2][0]="7",tab.tab[2][1]="8",tab.tab[2][2]="9"
-	 */
-	//"1 | 2 | 3" +"/n"+ " 4 | 5 | 6" +"/n"+"7 | 8 | 9");
+
 	Tabuleiro tab =new Tabuleiro();
 
 	//Construir Tabuleiro
